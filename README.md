@@ -1,6 +1,6 @@
-# Flask Portfolio API
+# Flask Contact-Manager-API
 
-![Flask Portfolio API](/path/to/portfolio_api_screenshot.png)
+
 
 ## Description
 
@@ -35,7 +35,7 @@ The project structure includes the following files:
 
 ## Manipulation_Result_Screens
 
-![Manipulation Result Screens](/path/to/manipulation_result_screens.png)
+
 
 In the `Manipulation_Result_Screens` directory, you can find screenshots showcasing the results of various operations performed on the Flask Portfolio API. These screenshots provide visual representations of how the API handles different CRUD operations on the contact list.
 

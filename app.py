@@ -2,6 +2,7 @@ from flask import Flask
 from flask_smorest import Api
 from db import db
 from resources.contact import blp as ContactBlueprint
+from flask_migrate import Migrate
 
 
 def create_app(db_url=None):
@@ -12,7 +13,7 @@ def create_app(db_url=None):
     app.config["SQLALCHEMY_DATABASE_URI"] = db_url or "sqlite:///data.db"
     app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
     app.config["PROPAGATE_EXCEPTIONS"] = True
-
+    migrate = Migrate(app, db)
     # Initialize the SQLAlchemy extension
     db.init_app(app)
 

@@ -25,7 +25,6 @@ def create_app(db_url=None):
         "DATABASE_URL", "sqlite:///data.db"
     )
 
-    # Initialize the SQLAlchemy extension
     db.init_app(app)
 
     with app.app_context():
